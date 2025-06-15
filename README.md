@@ -1,4 +1,5 @@
 # 🌐 My HTML Landing Page
+🔗 **Live Preview:** [View it here](https://nonhle98.github.io/my-html-landing-page/)
 
 A clean and responsive landing page built using only **HTML** and **CSS**. This is one of my first front-end projects, created to practice layout structure, styling, and responsiveness.
 
