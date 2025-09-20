@@ -4,11 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A.A.A Hair</title>
+
+    <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <style>
+      body {
+        background-image: url("https://cdn.iseehair.com/media/catalog/product/9/_/9_18_7.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: white;
+        font-family: "Courier New", Courier, monospace;
+        margin: 0;
+        padding: 0;
+      }
+
       h1 {
         color: azure;
         font-size: 42px;
@@ -21,19 +34,11 @@
       h2 {
         color: blueviolet;
         font-size: 24px;
-        text-align: left;
+        text-align: center;
         text-decoration: underline;
         padding: 15px 20px;
         margin: 20px auto;
         font-weight: 400;
-      }
-
-      body {
-        background-image: url("https://cdn.iseehair.com/media/catalog/product/9/_/9_18_7.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: white;
-        font-family: "Courier New", Courier, monospace;
       }
 
       button {
@@ -41,17 +46,18 @@
         color: white;
         border: none;
         padding: 16px;
-        margin: 10px;
+        margin: 10px auto;
         font-size: 16px;
         border-radius: 12px;
         cursor: pointer;
         transition: all 200ms ease;
         display: block;
+        width: fit-content;
       }
 
       button:hover {
-        background: white;
-        color: pink;
+        background-color: white;
+        color: hotpink;
         border-radius: 30px;
         box-shadow: 0 0 10px palevioletred;
       }
@@ -60,61 +66,69 @@
         background-color: transparent;
         font-size: 24px;
         padding: 10px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
 
-      .listitem {
-        margin-bottom: 10px;
-        font-weight: bold;
+      .list {
+        text-align: center;
+        margin-top: 20px;
       }
 
       p {
         font-size: 18px;
-        opacity: 0.7;
+        opacity: 0.8;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
       }
     </style>
   </head>
   <body>
-    <h1>
-      <hr />
-      Welcome to A.A.A Hair by Noh's Studio
-    </h1>
+    <main>
+      <h1>
+        <hr />
+        Welcome to A.A.A Hair by Noh's Studio
+      </h1>
 
-    <h2>
-      <em>Nothing beats this price!</em>
-      <br />
-      <em>See below 😜</em>
-    </h2>
+      <h2>
+        <em>Nothing beats these prices!</em><br />
+        <em>See for yourself 😜</em>
+      </h2>
 
-    <button class="btn-icon" id="homeBtn"><i class="fa fa-home"></i> Home</button>
+      <div style="text-align: center;">
+        <button class="btn-icon" id="homeBtn" aria-label="Go to home page">
+          <i class="fa fa-home"></i> Home
+        </button>
+      </div>
 
-    <div class="list">
-      <button class="order-btn">Human Hair Wigs SALE!</button>
-      <button class="order-btn">Bob Wigs SALE!</button>
-      <button class="order-btn">Bundles & Closures SALE!</button>
-    </div>
+      <div class="list">
+        <button class="order-btn">Human Hair Wigs — SALE!</button>
+        <button class="order-btn">Bob Wigs — SALE!</button>
+        <button class="order-btn">Bundles & Closures — SALE!</button>
+      </div>
 
-    <p><strong>Coded by Nonhle Mhlongo</strong></p>
+      <p><strong>Coded by Nonhle Mhlongo</strong></p>
+    </main>
 
     <script>
       document.getElementById("homeBtn").addEventListener("click", function () {
         let name = prompt("What would you like to order today?");
 
         if (!name || name.trim().length === 0) {
-          alert("Check another website, no hair for you 😞!");
+          alert("Oops! No input detected. Come back when you're ready 😞");
         } else if (name.toLowerCase().includes("hair")) {
           alert(
-            "Thanks, we are preparing your order. We will be in touch. Meanwhile, have a look around!"
+            "Thanks! We're preparing your order. We'll be in touch shortly. Meanwhile, feel free to browse!"
           );
         } else {
-          alert("We only sell hair products—please check our catalog again!");
+          alert("We only sell hair products — please check our catalog again!");
         }
       });
 
       document.querySelectorAll(".order-btn").forEach(function (button) {
         button.addEventListener("click", function () {
-          alert(`You clicked: ${button.textContent}`);
+          alert(`You selected: ${button.textContent}`);
         });
       });
     </script>
