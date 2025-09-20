@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>A.A.A Hair</title>
+
+    <!-- Font Awesome for icons -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -11,53 +13,31 @@
 
     <style>
       body {
-        background-image: url("https://cdn.iseehair.com/media/catalog/product/9/_/9_18_7.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        color: white;
+        background: linear-gradient(to right, #ffc0cb, #ffe4e1);
+        color: #333;
         font-family: "Courier New", Courier, monospace;
         margin: 0;
         padding: 0;
       }
 
       h1 {
-        color: azure;
+        color: #4b0082;
         font-size: 42px;
         text-align: center;
         padding: 20px;
         margin: 20px;
-        border: 2px solid powderblue;
+        border: 2px solid #dda0dd;
+        background-color: #fff0f5;
       }
 
       h2 {
-        color: blueviolet;
+        color: #800080;
         font-size: 24px;
         text-align: center;
         text-decoration: underline;
-        padding: 15px 20px;
-        margin: 20px auto;
-        font-weight: 400;
-      }
-
-      button {
-        background-color: hotpink;
-        color: white;
-        border: none;
-        padding: 16px;
+        padding: 10px 20px;
         margin: 10px auto;
-        font-size: 16px;
-        border-radius: 12px;
-        cursor: pointer;
-        transition: all 200ms ease;
-        display: block;
-        width: fit-content;
-      }
-
-      button:hover {
-        background-color: white;
-        color: hotpink;
-        border-radius: 30px;
-        box-shadow: 0 0 10px palevioletred;
+        font-weight: 400;
       }
 
       .btn-icon {
@@ -67,18 +47,45 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        margin: 0 auto;
+        cursor: pointer;
+        color: #800080;
+        border: none;
       }
 
       .list {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         margin-top: 20px;
+        gap: 20px;
+      }
+
+      .order-btn {
+        width: 300px;
+        height: 180px;
+        border: none;
+        border-radius: 12px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        text-shadow: 1px 1px 3px black;
+        cursor: pointer;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .order-btn:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       }
 
       p {
         font-size: 18px;
-        opacity: 0.8;
         text-align: center;
         padding-top: 30px;
+        color: #4b0082;
       }
     </style>
   </head>
@@ -101,9 +108,26 @@
       </div>
 
       <div class="list">
-        <button class="order-btn">Human Hair Wigs — SALE!</button>
-        <button class="order-btn">Bob Wigs — SALE!</button>
-        <button class="order-btn">Bundles & Closures — SALE!</button>
+        <button
+          class="order-btn"
+          style="background-image: url('https://i.pinimg.com/736x/76/3a/59/763a5974c0e8910d453e00626135b4ec.jpg');"
+        >
+          Human Hair Wigs — SALE!
+        </button>
+
+        <button
+          class="order-btn"
+          style="background-image: url('https://i.pinimg.com/736x/eb/c6/c3/ebc6c3934b0a2b57482ed8e3e3b7491e.jpg');"
+        >
+          Bob Wigs — SALE!
+        </button>
+
+        <button
+          class="order-btn"
+          style="background-image: url('https://i.pinimg.com/736x/76/9e/7a/769e7ae7500c65fc10e3dc058196e527.jpg');"
+        >
+          Bundles & Closures — SALE!
+        </button>
       </div>
 
       <p><strong>Coded by Nonhle Mhlongo</strong></p>
@@ -132,3 +156,4 @@
     </script>
   </body>
 </html>
+
